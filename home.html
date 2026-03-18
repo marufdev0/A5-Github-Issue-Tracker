@@ -19,6 +19,57 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header class="bg-base-100 shadow-sm">
+        <nav class="w-11/12 mx-auto ">
+            <div class="navbar flex justify-between items-center">
+                <div class="flex justify-between items-center">
+                    <div class="w-[50px]"><img src="./assets/github-logo.png" alt=""></div>
+                    <a class="btn btn-ghost text-xl">GitHub Issues Tracker</a>
+                </div>
+                <div class="flex justify-between items-center gap-2">
+                    <div class="flex gap-2">
+                    <input type="text" placeholder="Search" class="input input-bordered md:w-auto" />
+                    </div>
+                    <div>
+                        <button class="btn bg-primary text-gray-50"><i class="fa-solid fa-plus"></i> New Issue</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-base-200 w-11/12 shadow-xl mx-auto mt-5">
+        <div class="p-3">
+            <button  class="btn bg-gray-500 text-white btn-all" id="all-btn">All</button>
+            <button  class="btn btn-all" id="open-btn">Open</button>
+            <button  class="btn btn-all" id="close-btn">Closed</button>
+        </div>
+    </main>
+    <section class="bg-base-200 w-11/12 shadow-xl mx-auto mt-5">
+        <div class="flex justify-between items-center p-3">
+            <div class="flex items-center gap-1">
+                <div><img src="./assets/Aperture.png" alt=""></div>
+                <div>
+                    <h2 class="text-[#1F2937] font-bold"><span id="total-count">0</span> Issues</h2>
+                    <p class="text-[#a7a7a7]">Track and manage your project issues</p>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center gap-4">
+                <div class="flex justify-between items-center gap-2">
+                    <div class="w-[15px] h-[15px] bg-green-600 rounded-full"></div>
+                    <h2>Open</h2>
+                </div>
+                <div class="flex justify-between items-center gap-2">
+                    <div class="w-[15px] h-[15px] bg-[#A855F7] rounded-full"></div>
+                    <h2>Closed</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./JS/home.js"></script>
 </body>
 </html>
